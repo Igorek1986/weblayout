@@ -18,7 +18,7 @@ img {
 }
 
 body {
-  min-width: 1170px;
+  min-width: 1200px;
   font-family: "Muller", "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -30,32 +30,34 @@ body {
   list-style: none;
 }
 
-/* .btn-reset {
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-} */
-
 .flex {
   display: flex;
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-/* .section-offset {
-  padding-top: 70px;
-} */
-
 .h2-title {
+  margin: 0;
+  padding-left: 40px;
+  padding-bottom: 20px;
   font-family: Muller;
   font-size: 40px;
-  padding-left: 40px;
   color: #333;
+}
+
+.section-offset {
+  margin-bottom: 70px;
+}
+
+.btn {
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  padding: 13px 20px;
+  color: #cc9933;
 }
 
 /* header */
@@ -93,6 +95,8 @@ body {
   padding: 30px 45px;
   height: 70px;
   justify-content: space-between;
+  background: #fff;
+  border-radius: 15px;
 }
 
 .header-left {
@@ -110,34 +114,38 @@ body {
   margin-right: 45px;
 }
 
-.header-btn {
-  border: 1px solid #cc9933;
-  border-radius: 10px;
-  padding: 13px 20px;
-  color: #cc9933;
-}
-
-/* .header-btn:last-child {
-  padding-right: 40px;
-} */
-
 .header-btn:not(:last-child) {
   margin-right: 40px;
 }
 
 /* offers */
-.offers-card-left {
-  flex-direction: column;
+.main_section {
+  margin: 0;
 }
 
 .offers-left {
-  width: 573px;
   flex-direction: column;
 }
 
+.offers-right {
+  justify-content: stretch;
+}
+
 .offers-item {
+  width: 573px;
   margin-right: 24px;
   margin-bottom: 24px;
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-right: 108px;
+  padding-bottom: 40px;
+  flex-direction: column;
+}
+
+.offers-item-2 {
+  padding-top: 212px;
+  padding-left: 45px;
+  padding-right: 229px;
 }
 
 .offers-item:last-child {
@@ -161,32 +169,13 @@ body {
 }
 
 .offers-background-3 {
-  width: 574px;
+  width: 573px;
   background-image: url(../img/offers-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 15px;
 }
-
-.blog-left {
-  width: 420px;
-  padding: 40px 108px 40px 45px;
-  flex-direction: column;
-}
-
-/* .offers-blog-text-padding {
-  padding: 40px 108px 40px 45px;
-} */
-
-.blog-right {
-  padding: 212px 259px 15px 45px;
-}
-
-/* .offers-blog-text {
-  display: block;
-  padding-bottom: 47px;
-} */
 
 .overflow {
   word-wrap: break-word;
@@ -213,54 +202,163 @@ body {
   font-family: Muller;
   font-size: 16px;
   color: #f0bf5f;
+  align-items: center;
 }
-
-.offers-blog-right {
-  padding: 15px 386px 47px 45px;
-}
-
-.blog-link-offset {
-  padding-left: 45px;
-}
-/* .offers-blog-title:not(:last-child) { */
-/*   width: 420px; */
-/*   height: 80px; */
-/* } */
 
 /* about-us */
-/* .about-us-container {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-height: 252px;
+.about-us-text {
   max-width: 888px;
-} */
-
-/* .section-about_us {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 0 auto;
-  margin-bottom: 70px;
-  width: 888px;
-  height: 231px;
-} */
-
-/* .main-about-heading {
-  margin: 0;
-  margin-bottom: 11px;
-  font-family: Muller;
-  font-size: 40px;
-  line-height: 40px;
-  color: #333333;
-  padding-left: 45px;
-} */
-
-/* .main-about-paragraph {
-  max-width: 888px;
-  margin: 0;
+  margin-right: 0;
   font-family: Muller;
   font-size: 16px;
-  line-height: 200%;
-  color: #000000;
-} */
+  color: #000;
+}
+
+/* services */
+.services-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  margin: 0;
+  margin-bottom: 24px;
+  width: 573px;
+  background-color: #fff;
+}
+
+.services-item:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+.services-img {
+  padding-bottom: 26px;
+}
+
+.services-link {
+  padding-left: 45px;
+  font-family: Muller;
+  font-size: 20px;
+  color: #cc9933;
+  align-items: center;
+}
+
+.services-text {
+  width: 402px;
+  padding-left: 45px;
+  font-family: Muller;
+  font-size: 16px;
+  color: #000;
+}
+
+/* advantages */
+.advantages-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  margin: 0;
+  margin-bottom: 22px;
+  width: 276px;
+  min-height: 276px;
+  border-radius: 15px;
+}
+
+.advantages-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+.advantages-img {
+  padding-left: 45px;
+}
+
+.advantages-text {
+  padding-left: 45px;
+  font-family: Muller;
+  font-size: 16px;
+  color: #000;
+}
+
+/* placement */
+.placement-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.placement-item {
+  margin: 0;
+  margin-bottom: 22px;
+  width: 374px;
+  min-height: 440px;
+  border-radius: 15px;
+}
+
+.placement-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+.placement-img {
+  padding-bottom: 32px;
+}
+
+.placement-img-2 {
+  padding-bottom: 0px;
+  background-image: url(../img/41.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.placement-price-card {
+  padding-bottom: 16px;
+  padding-left: 45px;
+}
+
+.placement-from {
+  padding-right: 4px;
+  font-family: Muller;
+  font-size: 16px;
+  color: #999;
+}
+
+.placement-price {
+  padding-right: 4px;
+  font-family: Muller;
+  font-size: 20px;
+  color: #000;
+}
+
+.placement-price-night {
+  padding-right: 52px;
+  font-family: Muller;
+  font-size: 16px;
+  color: #000;
+}
+
+.placement-link-card {
+  padding: 373px 54px 27px 54px;
+  align-items: center;
+}
+
+.placement-link {
+  padding-right: 8px;
+  font-family: Muller;
+  font-size: 20px;
+  color: #fff;
+}
+
+.placement-hotel-name {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: Muller;
+  font-size: 16px;
+  color: #000;
+}
+
+.placement-hotel-country {
+  padding-bottom: 20px;
+  font-family: Muller;
+  font-size: 16px;
+  color: #999;
+}
