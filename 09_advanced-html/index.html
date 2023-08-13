@@ -401,32 +401,28 @@
                 <div class="tour-form flex">
                   <div class="form-left flex">
                     <div class="tour-city-item tour-offset">
-                      <div class="tour-section-item">Город вылета</div>
-                      <div>
-                        <select class="tour-select">
+                      <label class="tour-section-item" for="city">Город вылета</label>
+                        <select class="tour-select" id="city">
                           <option class="tour-option" value="Санкт-Петербург">Санкт-Петербург</option>
                         </select>
-                      </div>
                     </div>
                     <div class="tour-city-item tour-offset">
-                      <div class="tour-section-item">Страна</div>
-                      <div>
-                        <select class="tour-select">
+                      <label class="tour-section-item" for="country">Страна</label>
+                        <select class="tour-select" id="country">
                           <option class="tour-option" value="Австралия">Австралия</option>
                         </select>
-                      </div>
                     </div>
                     <div class="tour-date tour-offset">
-                      <div class="tour-date-head">Дата прибытия</div>
-                      <div><input class="tour-date-item" type="date" name="date" value="2021-10-18"></div>
+                      <label class="tour-date-head" for="date">Дата прибытия</label>
+                      <input class="tour-date-item" type="date" id="date" name="date-arrive" value="2021-10-18">
                     </div>
                     <div class="tour-night tour-offset">
-                      <div class="tour-night-head">Ночей</div>
-                      <div><input class="tour-night-item" type="number" name="night" value="6"></div>
+                      <label class="tour-night-head" for="night">Ночей</label>
+                      <input class="tour-night-item" type="number" id="night" name="night" value="6">
                     </div>
                     <div class="tour-tourist tour-offset">
-                      <div class="tour-tourist-head">Туристы</div>
-                      <div><input class="tour-tourist-item" type="number" name="tourist" value="2"></div>
+                      <label class="tour-tourist-head" for="tourist">Туристы</label>
+                      <div><input class="tour-tourist-item" type="number" id="tourist" name="tourist" value="2"></div>
                     </div>
                   </div>
                   <div class="form-right"><button class="tour-btn">Найти</button></div>
@@ -524,9 +520,6 @@
               </a>
             </div>
           </div>
-          <!-- <div class="footer-logo">
-            <img src="./img/footer-logo.jpg" alt="footer-logo">
-          </div> -->
           <div class="footer-right">
             <div class="footer-social flex">
               <a href="#" class="footer-social-logo">

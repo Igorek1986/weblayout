@@ -479,6 +479,9 @@ body {
   margin-top: 15px;
   border: none;
   background-color: #fff;
+  background-image: url("../img/rectangle-down-black.png");
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .tour-option {
@@ -511,7 +514,6 @@ body {
 }
 
 .tour-date-head {
-  margin-bottom: 15px;
   color: #000;
   font-family: Muller;
   font-size: 12px;
@@ -521,6 +523,7 @@ body {
 }
 
 .tour-date-item {
+  margin-top: 15px;
   width: 121px;
   padding: 0;
   border: none;
@@ -537,7 +540,7 @@ body {
 }
 
 .tour-night-head {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   color: #000;
   font-family: Muller;
   font-size: 12px;
@@ -547,6 +550,7 @@ body {
 }
 
 .tour-night-item {
+  margin-top: 15px;
   width: 121px;
   border: none;
   border-bottom: 1px solid #E9E9E9;
@@ -563,7 +567,7 @@ body {
 }
 
 .tour-tourist-head {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   color: #000;
   font-family: Muller;
   font-size: 12px;
@@ -573,6 +577,7 @@ body {
 }
 
 .tour-tourist-item {
+  margin-top: 15px;
   width: 121px;
   border: none;
   border-bottom: 1px solid #E9E9E9;
@@ -587,6 +592,10 @@ body {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
+}
+
+select {
+  -webkit-appearance: none;
 }
 
 .tour-btn {
