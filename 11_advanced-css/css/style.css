@@ -381,6 +381,27 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
+.services__link {
+  padding-left: 45px;
+  padding-right: 4px;
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+  color: var(--yellow-color);
+  align-items: center;
+  transition: color .3s ease-in-out;
+}
+
+.services__item--center {
+  align-items: center;
+}
+
+.services__stroke {
+  stroke: var(--yellow-color);
+  transition: stroke .3s ease-in-out;
+}
+
 .services__item .services__link::after {
   content: "";
   position: absolute;
@@ -391,38 +412,24 @@ body {
 }
 
 .services__link:focus::after {
-  outline: 1px solid #C93;
+  outline: 1px solid var(--shade-of-brown);
   outline-offset: 7px;
-}
-
-.services__link {
-  padding-left: 45px;
-  font-family: Muller;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 200%;
-  color: var(--yellow-color);
-  align-items: center;
-  stroke: var(--yellow-color);
-  transition: color .3s ease-in-out;
 }
 
 .services__link:hover {
   color: var(--medium-light-shade-of-brown);
 }
 
-.services__link:hover svg {
+.services__item--center:hover svg {
   stroke: var(--medium-light-shade-of-brown);
-  transition: stroke .3s ease-in-out;
 }
 
 .services__link:active {
   color: var(--medium-dark-shade-of-brown);
 }
 
-.services__link:active svg {
+.services__item--center:active svg {
   stroke: var(--medium-dark-shade-of-brown);
-  transition: stroke .3s ease-in-out;
 }
 
 .services__text {
