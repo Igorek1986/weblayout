@@ -334,6 +334,7 @@ body {
 }
 
 .offers__link {
+  padding-right: 4px;
   font-family: Muller;
   font-size: 16px;
   font-weight: 400;
@@ -341,6 +342,14 @@ body {
   color: var(--medium-light-shade-of-brown);
   align-items: center;
   transition: color .3s ease-in-out;
+}
+
+.offers__link--center {
+  align-items: center;
+}
+
+.offers__link--center:hover {
+  transform: translate(15px, 0px) scale(1.1);
 }
 
 .offers__link:active {
@@ -550,11 +559,20 @@ body {
 }
 
 .placement__link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
   font-family: Muller;
   font-size: 20px;
   font-weight: 500;
   line-height: normal;
   color: var(--white-color);
+  transition: background-size .3s;
+}
+
+.placement__link:hover {
+  background-size: 100% 2px;
 }
 
 .placement__link-card .placement__link::after {
@@ -751,7 +769,7 @@ select {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  transition: color .3s ease-in-out, outline .3s ease-in-out;
+  transition: color .3s ease-in-out, outline .3s ease-in-out, transform .3s ease-in-out;
 }
 
 .contact__link:focus {
@@ -761,6 +779,7 @@ select {
 
 .contact__link:hover {
   color: var(--yellow-color);
+  transform: scale(1.1);
 }
 
 .contact__link:active {
@@ -843,12 +862,14 @@ select {
 }
 
 .footer__link {
+  display: block;
   color: var(--shade-of-brown);
   font-family: Muller;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  transition: color .3s ease-in-out, transform .3s ease-in-out;
 }
 
 .footer__link:focus {
@@ -858,15 +879,30 @@ select {
 
 .footer__link:hover {
   color: var(--medium-light-shade-of-brown);
-}
-
-.footer__link:hover svg {
-  fill: var(--medium-light-shade-of-brown);
+  transform: scale(1.1);
 }
 
 .footer__link:active {
   color: var(--medium-dark-shade-of-brown);
   outline: none;
+}
+
+.footer__social--logo svg {
+  fill: var(--gray);
+  transition: fill .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.footer__social--logo:focus svg {
+  fill: var(--yellow-color);
+}
+
+.footer__social--logo:hover svg {
+  fill: var(--medium-light-shade-of-brown);
+  transform: scale(1.3);
+}
+
+.footer__social--logo:active svg {
+  fill: var(--medium-dark-shade-of-brown);
 }
 
 .footer__center--offset:not(:last-child) {
