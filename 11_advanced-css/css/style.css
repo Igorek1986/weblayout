@@ -284,7 +284,7 @@ body {
 }
 
 .offers__background-1 {
-  background-image: url(../img/offers-1.jpg);
+  background-image: url(../img/offers-1.jpg), linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0.00) 65.7%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -292,7 +292,7 @@ body {
 }
 
 .offers__background-2 {
-  background-image: url(../img/offers-2.jpg);
+  background-image: url(../img/offers-2.jpg), linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0.00) 65.7%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -365,6 +365,7 @@ body {
 }
 
 .services__item {
+  position: relative;
   margin: 0;
   margin-bottom: 24px;
   width: 573px;
@@ -378,6 +379,20 @@ body {
 .services__img {
   padding-bottom: 26px;
   border-radius: 15px 15px 0 0;
+}
+
+.services__item .services__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.services__link:focus::after {
+  outline: 1px solid #C93;
+  outline-offset: 7px;
 }
 
 .services__link {
@@ -524,10 +539,10 @@ body {
   position: relative;
   padding: 373px 54px 27px 54px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .placement__link {
-  padding-right: 8px;
   font-family: Muller;
   font-size: 20px;
   font-weight: 500;
