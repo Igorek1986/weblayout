@@ -418,11 +418,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  outline-color: transparent;
 }
 
 .services__link:focus::after {
   outline: 1px solid var(--shade-of-brown);
   outline-offset: 7px;
+  transition: outline-color .3s ease-in-out;
 }
 
 .services__link:hover {
