@@ -80,7 +80,7 @@ body {
   border: none;
 }
 
-.btn__orange {
+.btn-orange {
   background: #F90;
   color: #FFF;
   text-align: center;
@@ -91,23 +91,11 @@ body {
   line-height: normal;
 }
 
-.btn__orange--calculation {
+.calculation__btn {
   font-size: 23px;
 }
 
-.btn__about {
-  border: 3px solid #F90;
-  background: transparent;
-  color: #FFF;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.btn__orange--footer {
+.footer__btn {
   padding: 19px 52px;
 }
 
@@ -131,11 +119,11 @@ body {
   line-height: normal;
 }
 
-.h3__offset {
+.about__h3 {
   padding-top: 65px;
 }
 
-.flex__column {
+.flex-column {
   flex-direction: column;
 }
 
@@ -227,7 +215,7 @@ body {
   margin-bottom: 50px;
 }
 
-.calculation_h1 {
+.calculation__h1 {
   width: 837px;
   margin: 0;
   margin-left: 80px;
@@ -242,7 +230,7 @@ body {
   line-height: normal;
 }
 
-.calculation_p {
+.calculation__p {
   width: 790px;
   margin: 0;
   margin-left: 80px;
@@ -265,11 +253,11 @@ body {
   gap: 32px;
 }
 
-.about__item--offset {
+.about__item-offset {
   padding-left: 300px;
 }
 
-.about__item--text {
+.about__item-text {
   width: 750px;
   color: #000;
   font-family: Montserrat;
@@ -311,6 +299,18 @@ body {
   line-height: 32px;
 }
 
+.about__btn {
+  border: 3px solid #F90;
+  background: transparent;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .about__ellipse {
   position: absolute;
   padding: 110px 0 0 60px;
@@ -331,7 +331,7 @@ body {
   padding: 65px 0 0 114.61px;
 }
 
-.about__item--frame{
+.about__item-frame{
   width: 868px;
   height: 196px;
   margin-top: 426px;
@@ -364,7 +364,7 @@ body {
   padding-bottom: 42px;
 }
 
-.h3__stages {
+.stages__h3 {
   line-height: 32px;
 }
 
@@ -383,11 +383,11 @@ body {
   line-height: 32px;
 }
 
-.btn__stages {
+.stages__btn {
   margin-right: 32px;
 }
 
-.stages__offset--bottom {
+.stages__offset-bottom {
   margin-bottom: 85px;
 }
 
@@ -405,7 +405,7 @@ body {
   border: 1px solid #CACACA;
 }
 
-.questions_blog > p {
+.questions__blog > p {
   width: 355px;
   margin: 0;
   margin-top: 8px;
@@ -433,7 +433,7 @@ body {
   margin-right: 349px;
 }
 
-.footer__nav--offset {
+.footer__nav-offset {
   margin-top: 20px;
   margin-bottom: 90px;
   color: #CACACA;
@@ -456,7 +456,7 @@ body {
   margin-right: 236px;
 }
 
-.footer__center--h2 {
+.footer__center-h2 {
   color: #CACACA;
   font-family: Montserrat;
   font-size: 48px;
