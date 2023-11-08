@@ -18,7 +18,7 @@ img {
 }
 
 body {
-  min-width: 1920px;
+  /* min-width: 1920px; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -149,19 +149,19 @@ body {
   padding-right: 75px;
   gap: 821px;
   /* justify-content: space-between; */
-  align-items: center;
+  /* align-items: center; */
 }
 
 .header__left {
   width: 225px;
   height: 72px;
+  padding: 14px 0;
   /* padding-left: 75px; */
   /* margin-right: 821px; */
-  /* padding: 14px 0; */
 }
 
 .header__right {
-  width: 724px;
+  /* width: 615px; */
   padding: 39px 0;
   color: #000;
   font-family: Montserrat;
@@ -172,7 +172,7 @@ body {
 }
 
 .nav__list {
-  gap: 85px;
+  gap: 83px;
 }
 
 .nav__item {
@@ -186,20 +186,28 @@ body {
   align-items: center;
 }
 
-.nav__item--1 {
+.header__nav {
+  width: 630px;
+}
+
+/* .nav__item--1 {
   width: 54px;
-}
+} */
 
-.nav__item--2 {
+/* .nav__item--2 {
   width: 60px;
-}
+} */
 
-.nav__item--3 {
+/* .nav__item--3 {
   width: 87px;
-}
+} */
 
-.nav__item--4 {
+/* .nav__item--4 {
   width: 170px;
+} */
+
+.header__search {
+  padding-left: 75px;
 }
 
 /* calculation */
@@ -231,7 +239,7 @@ body {
 }
 
 .calculation__p {
-  width: 790px;
+  width: 820px;
   margin: 0;
   margin-left: 80px;
   color: #FFF;
@@ -259,6 +267,7 @@ body {
 
 .about__item-text {
   width: 750px;
+  margin-top: 10px;
   color: #000;
   font-family: Montserrat;
   font-size: 16px;
@@ -300,6 +309,7 @@ body {
 }
 
 .about__btn {
+  width: 175px;
   border: 3px solid #F90;
   background: transparent;
   color: #FFF;
@@ -341,7 +351,18 @@ body {
   align-items: center;
 }
 
-.about__item--frame > p {
+.about__frame-p {
+  width: 437px;
+  margin: 50px 160px 50px 50px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 200% */
+}
+
+/* .about__item--frame > p {
   width: 433px;
   margin: 50px 160px 50px 50px;
   color: #FFF;
@@ -350,11 +371,11 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
-}
+} */
 
-.about__item--frame > button {
+/* .about__item--frame > button {
   height: 60px;
-}
+} */
 
 /* stages */
 
@@ -372,7 +393,7 @@ body {
   width: 758px;
   height: 352px;
   margin: 0;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   margin-bottom: 18px;
   margin-right: 142px;
   color: #000;
@@ -387,26 +408,45 @@ body {
   margin-right: 32px;
 }
 
+.stages__btn-contract {
+  width: 147px;
+  padding: 19px 38px;
+  background-color: transparent;
+  border-radius: 16px;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .stages__offset-bottom {
-  margin-bottom: 85px;
+  margin-bottom: 100px;
 }
 
 /* questions */
 
 .questions__offset > h2 {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-bottom: 32px;
 }
 
-.questions_blog {
+.questions__blog {
   width: 569px;
   padding: 65px 65px 65px 60px;
   border-radius: 32px;
   border: 1px solid #CACACA;
 }
 
-.questions__blog > p {
-  width: 355px;
+.questions__h3 {
+  width: 417px;
+}
+
+.questions__p {
+  width: 450px;
   margin: 0;
   margin-top: 8px;
   color: #000;
@@ -425,12 +465,21 @@ body {
 
 .footer {
   margin-top: 100px;
+  padding-left: 0;
   background-color: #000;
 }
 
 .footer__left {
+  width: 333px;
   padding: 50px 0 50px 75px;
-  margin-right: 349px;
+  margin-right: 342px;
+}
+
+.footer__logo {
+  width: 185.792px;
+  height: 58.755px;
+  padding-left: 12.16px;
+  padding-top: 16.08px;
 }
 
 .footer__nav-offset {
@@ -445,6 +494,7 @@ body {
 }
 
 .footer__social {
+  width: 260px;
   gap: 25px;
 }
 
@@ -457,12 +507,23 @@ body {
 }
 
 .footer__center-h2 {
+  margin: 50px 0 25px;
+  /* margin-top: 50px; */
   color: #CACACA;
   font-family: Montserrat;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.form__placeholder {
+  color: #CACACA;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
 }
 
 .form__name {
@@ -494,6 +555,8 @@ body {
 }
 
 .form__send-and-agreement {
+  width: 571px;
+  height: 47px;
   gap: 22px;
   /* justify-content: space-between; */
   align-items: center;
@@ -560,7 +623,8 @@ body {
   border: 1px solid #CACACA;
 }
 
-.footer__right--p {
+.footer__right-p {
+  margin: 0;
   width: 438px;
   /* margin-right: 75px; */
   padding-top: 137px;
