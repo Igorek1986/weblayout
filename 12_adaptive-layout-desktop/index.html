@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="container header__container offset">
+    <div class="container header__container">
       <div class="flex header__center">
         <div class="header__left">
           <a href="#" class="header__logo">
@@ -54,14 +54,14 @@
     </div>
   </header>
   <main class="main">
-    <section class="calculation offset">
+    <section class="calculation">
       <div class="container calculation__blog">
         <h1 class="calculation__h1">Проектные решения любой сложности</h1>
         <p class="calculation__p">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
         <button class="btn btn-orange calculation__btn">Заказать расчёт</button>
       </div>
     </section>
-    <section class="about offset">
+    <section class="about">
       <div class="container about__blog">
         <h2 class="h2">О&nbsp;нас</h2>
         <p class="about__p">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны максимально подробно. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
@@ -89,7 +89,7 @@
         </div>
       </div>
     </section>
-    <section class="stages offset">
+    <section class="stages">
       <div class="container">
         <h2 class="h2 stages__offset">Этапы</h2>
         <div class="flex stages__offset-bottom ">
@@ -106,7 +106,7 @@
         </div>
       </div>
     </section>
-    <section class="questions offset">
+    <section class="questions">
       <div class="container questions__offset">
         <h2 class="h2">Вопросы</h2>
         <ul class="flex list-reset questions__gap">
@@ -126,8 +126,8 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer flex container">
+  <footer class="footer">
+    <div class="flex container">
       <div class="footer__left">
         <a href="#" class="flex">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="72" viewBox="0 0 39 72" fill="none">
@@ -208,14 +208,9 @@
           <textarea name="message" placeholder="Сообщение" class="form__message form__placeholder"></textarea>
           <div class="flex form__send-and-agreement">
             <p><input class="btn btn-orange footer__btn" type="submit" value="Отправить данные"></p>
-            <label class="form__agreement custom-checkbox">
-              <input class="hidden-checkbox" type="checkbox">
-              <div class="checkbox">
-                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <rect x="0.5" y="0.5" width="13" height="13" stroke="#CACACA"/>
-                  <path d="M10.9495 4.08233L5.99977 9.03208L3.17135 6.20365" stroke="#97EE3F" stroke-width="2"/>
-                </svg>
-              </div>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" checked>
+              <span class="checkbox__svg"></span>
               Согласен на&nbsp;обработку данных
             </label>
           </div>
