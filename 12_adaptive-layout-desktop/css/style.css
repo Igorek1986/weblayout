@@ -53,7 +53,12 @@ body {
 }
 
 :root {
-  /* --gap_50: 50px; */
+  --orange: #F90;
+  --white: #FFF;
+  --black: #000;
+  --black_translucent: #00000080;
+  --light-gray: #cacaca;
+  --charcoal: #414141;
 }
 
 /* glob */
@@ -80,8 +85,8 @@ body {
 }
 
 .btn-orange {
-  background: #F90;
-  color: #FFF;
+  background: var(--orange);
+  color: var(--white);
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -100,7 +105,7 @@ body {
 
 .h2 {
   margin: 0;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 48px;
   font-style: normal;
@@ -110,7 +115,7 @@ body {
 
 .h3 {
   margin: 0;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -131,7 +136,7 @@ body {
 .header {
   height: 100px;
   border-radius: 0px 0px 32px 32px;
-  background: #FFF;
+  background: var(--white);
   box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -152,7 +157,7 @@ body {
 
 .header__right {
   padding: 39px 0;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
@@ -166,7 +171,7 @@ body {
 
 .nav__item {
   height: 22px;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
@@ -202,7 +207,7 @@ body {
   margin-bottom: 23px;
   padding-top: 100px;
   /* padding: 100px 0 0 80px; */
-  color: #FFF;
+  color: var(--white);
   font-family: Montserrat;
   font-size: 70px;
   font-style: normal;
@@ -214,7 +219,7 @@ body {
   width: 820px;
   margin: 0;
   margin-left: 80px;
-  color: #FFF;
+  color: var(--white);
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -240,7 +245,7 @@ body {
 .about__item-text {
   width: 750px;
   margin-top: 10px;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -262,7 +267,7 @@ body {
   width: 838px;
   height: 295px;
   border-radius: 32px;
-  border: 1px solid #CACACA;
+  border: 1px solid var(--light-gray);
 }
 
 .about__p {
@@ -270,7 +275,7 @@ body {
   padding-top: 20px;
   padding-bottom: 50px;
   width: 1235px;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -279,9 +284,9 @@ body {
 }
 
 .about__btn {
-  border: 3px solid #F90;
+  border: 3px solid var(--orange);
   background: transparent;
-  color: #FFF;
+  color: var(--white);
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -315,7 +320,7 @@ body {
   height: 196px;
   margin-top: 426px;
   padding: 0;
-  background-color: #00000080;
+  background-color: var(--black_translucent);
   border-radius: 32px;
   align-items: center;
 }
@@ -323,7 +328,7 @@ body {
 .about__frame-p {
   width: 437px;
   margin: 50px 160px 50px 50px;
-  color: #FFF;
+  color: var(--white);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -349,7 +354,7 @@ body {
   margin: 0;
   margin-bottom: 18px;
   margin-right: 142px;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -365,8 +370,8 @@ body {
   padding: 19px 38px;
   background-color: transparent;
   border-radius: 16px;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid var(--black);
+  color: var(--black);
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -389,7 +394,7 @@ body {
   width: 569px;
   padding: 65px 65px 65px 60px;
   border-radius: 32px;
-  border: 1px solid #CACACA;
+  border: 1px solid var(--light-gray);
 }
 
 .questions__h3 {
@@ -400,7 +405,7 @@ body {
   width: 450px;
   margin: 0;
   margin-top: 8px;
-  color: #000;
+  color: var(--black);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -417,7 +422,7 @@ body {
 .footer {
   margin-top: 100px;
   padding-left: 0;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .footer__left {
@@ -436,7 +441,7 @@ body {
 .footer__nav-offset {
   margin-top: 20px;
   margin-bottom: 90px;
-  color: #CACACA;
+  color: var(--light-gray);
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
@@ -460,7 +465,7 @@ body {
 .footer__center-h2 {
   margin: 50px 0 25px;
   /* margin-top: 50px; */
-  color: #CACACA;
+  color: var(--light-gray);
   font-family: Montserrat;
   font-size: 48px;
   font-style: normal;
@@ -469,7 +474,7 @@ body {
 }
 
 .form__placeholder {
-  color: #CACACA;
+  color: var(--light-gray);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -483,7 +488,7 @@ body {
   margin-bottom: 25px;
   padding-left: 24px;
   border-radius: 16px;
-  background-color: #414141;
+  background-color: var(--charcoal);
 }
 
 .form__email {
@@ -492,7 +497,7 @@ body {
   margin-bottom: 25px;
   padding-left: 24px;
   border-radius: 16px;
-  background-color: #414141;
+  background-color: var(--charcoal);
 }
 
 .form__message {
@@ -502,7 +507,7 @@ body {
   padding-top: 14px;
   padding-left: 24px;
   border-radius: 16px;
-  background-color: #414141;
+  background-color: var(--charcoal);
 }
 
 .form__send-and-agreement {
@@ -513,7 +518,7 @@ body {
 }
 
 .form__agreement {
-  color: #CACACA;
+  color: var(--light-gray);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -529,7 +534,7 @@ body {
 
 .checkbox {
   padding-left: 16px;
-  color: #CACACA;
+  color: var(--light-gray);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -548,7 +553,7 @@ body {
   margin-left: -18px;
   width: 14px;
   height: 14px;
-  border: 1px solid #CACACA;
+  border: 1px solid var(--light-gray)
 }
 
 .checkbox__input:checked + .checkbox__svg {
@@ -560,7 +565,7 @@ body {
   margin: 0;
   width: 363px;
   padding-top: 137px;
-  color: #CACACA;
+  color: var(--light-gray);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
