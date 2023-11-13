@@ -54,17 +54,25 @@ body {
 
 :root {
   --orange: #F90;
+  --light-orange: #FF9900;
+  --vivid-orange: #E1670E;
   --white: #FFF;
   --black: #000;
-  --black_translucent: #00000080;
+  --black-translucent: #00000080;
+  --gray: #666;
   --light-gray: #cacaca;
   --charcoal: #414141;
+  --medium-light-shade-of-brown: #FFB84D;
 }
 
 /* glob */
 
 .flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .list-reset {
@@ -82,6 +90,7 @@ body {
   border-radius: 16px;
   padding: 19px 38px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-orange {
@@ -93,14 +102,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-
-.calculation__btn {
-  font-size: 23px;
-}
-
-.footer__btn {
-  padding: 19px 52px;
 }
 
 .h2 {
@@ -121,14 +122,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-
-.about__h3 {
-  padding-top: 65px;
-}
-
-.flex-column {
-  flex-direction: column;
 }
 
 /* header */
@@ -165,6 +158,10 @@ body {
   line-height: normal;
 }
 
+.header__search {
+  outline: 2px solid transparent;
+}
+
 .nav__list {
   gap: 83px;
 }
@@ -186,6 +183,14 @@ body {
 
 .header__search {
   padding-left: 75px;
+}
+
+.header__search svg rect {
+  fill: var(--black);
+}
+
+.header__search svg path {
+  stroke: var(--black);
 }
 
 /* calculation */
@@ -226,6 +231,11 @@ body {
   font-weight: 700;
   line-height: normal;
 }
+
+.calculation__btn {
+  font-size: 23px;
+}
+
 
 .calculation__blog > button {
   margin: 90px 0 0 80px;
@@ -268,6 +278,10 @@ body {
   height: 295px;
   border-radius: 32px;
   border: 1px solid var(--light-gray);
+}
+
+.about__h3 {
+  padding-top: 65px;
 }
 
 .about__p {
@@ -320,7 +334,7 @@ body {
   height: 196px;
   margin-top: 426px;
   padding: 0;
-  background-color: var(--black_translucent);
+  background-color: var(--black-translucent);
   border-radius: 32px;
   align-items: center;
 }
@@ -368,7 +382,7 @@ body {
 
 .stages__btn-contract {
   padding: 19px 38px;
-  background-color: transparent;
+  background: transparent;
   border-radius: 16px;
   border: 1px solid var(--black);
   color: var(--black);
@@ -438,6 +452,15 @@ body {
   padding-top: 16.08px;
 }
 
+.footer__nav-link {
+  color: var(--light-gray);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 200% */
+}
+
 .footer__nav-offset {
   margin-top: 20px;
   margin-bottom: 90px;
@@ -452,6 +475,10 @@ body {
 .footer__social {
   width: 260px;
   gap: 25px;
+}
+
+.social svg path {
+  fill: var(--gray)
 }
 
 .form {
@@ -508,6 +535,10 @@ body {
   padding-left: 24px;
   border-radius: 16px;
   background-color: var(--charcoal);
+}
+
+.footer__btn {
+  padding: 19px 52px;
 }
 
 .form__send-and-agreement {
@@ -571,4 +602,203 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+}
+
+/* hover, focus, active */
+.nav__link {
+  border-bottom: 2px solid transparent;
+  outline: 2px solid transparent;
+  transition: border-bottom .3s ease-in-out, outline .3s ease-in-out, color .3s ease-in-out;
+}
+
+.nav__link:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--light-orange);
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid var(--orange);
+}
+
+.nav__link:active {
+  border-bottom: 2px solid var(--vivid-orange);
+  color: var(--vivid-orange);
+  outline: 2px solid transparent;
+}
+
+.header__search svg {
+  outline: 2px solid transparent;
+  transition: border-bottom .3s ease-in-out, outline .3s ease-in-out;
+}
+
+.header__search svg rect,
+.header__search svg path {
+  transition: fill .3s ease-in-out, stroke .3s ease-in-out;
+}
+
+.header__search:focus svg {
+  outline-offset: 2px;
+  outline: 2px solid var(--light-orange);
+}
+
+.header__search:hover svg {
+  outline: 2px solid transparent;
+}
+.header__search:hover svg rect {
+  fill: var(--light-orange);
+}
+
+.header__search:hover svg path {
+  stroke: var(--light-orange);
+}
+
+.header__search:active svg {
+  outline: 2px solid transparent;
+}
+
+.header__search:active svg rect {
+  fill: var(--black);
+}
+
+.header__search:active svg path {
+  stroke: var(--black);
+}
+
+.btn-orange {
+  transition: background .3s ease-in-out;
+}
+
+.btn-orange:focus {
+  background: var(--medium-light-shade-of-brown);
+}
+
+.btn-orange:hover {
+  background: var(--medium-light-shade-of-brown);
+}
+
+.btn-orange:active {
+  background: var(--vivid-orange);
+}
+
+.about__btn {
+  border: transparent;
+  transition: background .3s ease-in-out, border .3s ease-in-out;
+}
+
+.about__btn:focus {
+  background: var(--medium-light-shade-of-brown);
+  border: 3px solid var(--medium-light-shade-of-brown);
+}
+
+.about__btn:hover {
+  background: var(--medium-light-shade-of-brown);
+  border: 3px solid var(--medium-light-shade-of-brown);
+}
+
+.about__btn:active {
+  background: var(--vivid-orange);
+  border: 3px solid var(--vivid-orange);
+}
+
+.stages__btn-contract {
+  transition: background .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.stages__btn-contract:focus {
+  background: var(--gray);
+  border: 1px solid var(--gray);
+  color: var(--white);
+}
+
+.stages__btn-contract:hover {
+  background: var(--gray);
+  border: 1px solid var(--gray);
+  color: var(--white);
+}
+
+/* .stages__btn {
+  transition: background .3s ease-in-out;
+}
+
+.stages__btn:focus {
+  background: var(--light-orange);
+}
+
+.stages__btn:hover {
+  background: var(--light-orange);
+}
+
+.stages__btn:active {
+  background: var(--vivid-orange);
+} */
+
+.footer__nav-link {
+  border-bottom: 2px solid transparent;
+  outline: 2px solid transparent;
+  transition: border-bottom .3s ease-in-out, outline .3s ease-in-out, color .3s ease-in-out;
+}
+
+.footer__nav-link:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--light-orange);
+}
+
+.footer__nav-link:hover {
+  outline: 2px solid transparent;
+  color: var(--orange);
+}
+
+.footer__nav-link:active {
+  color: var(--vivid-orange);
+  outline: 2px solid transparent;
+}
+
+.social svg {
+  outline: 2px solid transparent;
+  transition: border-bottom .3s ease-in-out, outline .3s ease-in-out;
+}
+
+
+.social svg path {
+  transition: fill .3s ease-in-out, stroke .3s ease-in-out;
+}
+
+.social:focus svg {
+  outline-offset: 2px;
+  outline: 2px solid var(--light-orange);
+}
+
+.social:hover svg {
+  outline: 2px solid transparent;
+}
+
+.social:hover svg path {
+  fill: var(--light-orange);
+}
+
+.social:active svg {
+  outline: 2px solid transparent;
+}
+
+.social:active svg path {
+  fill: var(--vivid-orange);
+}
+
+.form__name:focus,
+.form__email:focus,
+.form__message:focus {
+  background-color: var(--gray);
+}
+
+.form__name:hover,
+.form__email:hover,
+.form__message:hover {
+  background-color: var(--gray);
+}
+
+.form__name:active,
+.form__email:active,
+.form__message:active {
+  background-color: var(--gray);
+  color: var(--white);
 }
