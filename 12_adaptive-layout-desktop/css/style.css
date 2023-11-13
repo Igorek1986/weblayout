@@ -681,7 +681,6 @@ body {
 }
 
 .about__btn {
-  border: transparent;
   transition: background .3s ease-in-out, border .3s ease-in-out;
 }
 
@@ -715,22 +714,6 @@ body {
   border: 1px solid var(--gray);
   color: var(--white);
 }
-
-/* .stages__btn {
-  transition: background .3s ease-in-out;
-}
-
-.stages__btn:focus {
-  background: var(--light-orange);
-}
-
-.stages__btn:hover {
-  background: var(--light-orange);
-}
-
-.stages__btn:active {
-  background: var(--vivid-orange);
-} */
 
 .footer__nav-link {
   border-bottom: 2px solid transparent;
