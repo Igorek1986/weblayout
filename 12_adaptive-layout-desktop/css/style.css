@@ -477,8 +477,12 @@ body {
   gap: 25px;
 }
 
+.social {
+  outline: 2px solid transparent;
+}
+
 .social svg path {
-  fill: var(--gray)
+  fill: var(--gray);
 }
 
 .form {
@@ -516,6 +520,7 @@ body {
   padding-left: 24px;
   border-radius: 16px;
   background-color: var(--charcoal);
+  outline: 2px solid transparent;
 }
 
 .form__email {
@@ -525,6 +530,7 @@ body {
   padding-left: 24px;
   border-radius: 16px;
   background-color: var(--charcoal);
+  outline: 2px solid transparent;
 }
 
 .form__message {
@@ -535,10 +541,12 @@ body {
   padding-left: 24px;
   border-radius: 16px;
   background-color: var(--charcoal);
+  outline: 2px solid transparent;
 }
 
 .footer__btn {
   padding: 19px 52px;
+  outline: 2px solid transparent;
 }
 
 .form__send-and-agreement {
@@ -665,10 +673,11 @@ body {
 }
 
 .btn-orange {
-  transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out, outline .3s ease-in-out;
 }
 
 .btn-orange:focus {
+  outline: 2px solid transparent;
   background: var(--medium-light-shade-of-brown);
 }
 
@@ -681,10 +690,11 @@ body {
 }
 
 .about__btn {
-  transition: background .3s ease-in-out, border .3s ease-in-out;
+  transition: background .3s ease-in-out, border .3s ease-in-out, outline .3s ease-in-out;
 }
 
 .about__btn:focus {
+  outline: 2px solid transparent;
   background: var(--medium-light-shade-of-brown);
   border: 3px solid var(--medium-light-shade-of-brown);
 }
@@ -700,10 +710,11 @@ body {
 }
 
 .stages__btn-contract {
-  transition: background .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+  transition: background .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out, outline .3s ease-in-out;
 }
 
 .stages__btn-contract:focus {
+  outline: 2px solid transparent;
   background: var(--gray);
   border: 1px solid var(--gray);
   color: var(--white);
