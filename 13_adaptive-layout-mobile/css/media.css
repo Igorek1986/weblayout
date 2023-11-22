@@ -1,0 +1,185 @@
+@media (max-width: 1920px) {
+  .header {
+    max-width: 1466px;
+  }
+
+  .container {
+    max-width: 1366px;
+  }
+
+  .form {
+    margin-left: 0;
+  }
+
+  .header__left {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1366px) {
+  .header {
+    max-width: 1124px;
+  }
+
+  .header__left {
+    width: 150px;
+    padding: 26px 0;
+  }
+
+  .container {
+    max-width: 924px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 57px;
+  }
+
+  .header__search {
+    padding-left: 105px;
+  }
+
+  .calculation__blog {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 668px;
+  }
+
+  .calculation__h1 {
+    padding-top: 160px;
+    font-size: 60px;
+  }
+
+  .calculation__blog > button {
+    margin: 60px 77px 0;
+  }
+
+  .calculation__p {
+    max-width: 670px;
+    font-size: 20px;
+  }
+
+  .about-list {
+    --offsets: 0;
+    flex-direction: column;
+  }
+
+  .about__item-1 {
+    height: 640px;
+  }
+
+  .about__item-2 {
+    height: 295px;
+  }
+  .about__ellipse,
+  .about__ellipse-2 {
+    padding-left: 77px;
+  }
+
+  .about__package {
+    padding-left: 148px;
+  }
+
+  .about__frame {
+    padding-left: 130px;
+  }
+
+  .about__item-text {
+    width: 750px;
+    padding-bottom: 65px;
+  }
+
+  .stages__offset {
+    padding-top: 80px;
+    padding-bottom: 42px;
+  }
+
+  .stages__text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .stages__offset-bottom {
+    margin-bottom: 79px;
+  }
+
+  .questions-list {
+    --offsets: 0;
+  }
+
+  .questions__h3,
+  .questions__p {
+    max-width: 100%;
+  }
+
+  .footer {
+    margin-top: 75px;
+    height: 594px;
+  }
+
+  .footer__left {
+    padding: 50px 80px 50px 0;
+    margin-right: 45px;
+  }
+
+  .form {
+    max-width: 540px;
+  }
+
+  .footer__right {
+    display: none;
+  }
+
+  .footer__btn {
+    padding: 19px 37px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    max-width: 868px;
+    height: 69px;
+  }
+
+  .container {
+    max-width: 668px;
+  }
+
+  .header__left {
+    width: 150px;
+    padding: 18px 0;
+    margin-right: auto;
+  }
+
+  .header__logo {
+    width: 150px;
+    height: 35px;
+  }
+
+  .header__right {
+    padding: 23px 0;
+    font-size: 16px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .header__search {
+    margin-left: auto;
+    /* padding-left: 43px; */
+  }
+
+  .about__item-text {
+    max-width: 576px;
+    padding-bottom: 65px;
+  }
+
+  .footer > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+}
