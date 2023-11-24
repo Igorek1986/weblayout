@@ -20,6 +20,7 @@ img {
 
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 @font-face {
@@ -85,7 +86,7 @@ body {
 .container {
   max-width: 1770px;
   margin: 0 auto;
-  width: 100%;
+  padding: 0 75px;
 }
 
 .btn {
@@ -185,7 +186,7 @@ body {
 }
 
 .header__search {
-  padding-left: 75px;
+  padding-left: 70px;
 }
 
 .header__search svg rect {
@@ -205,8 +206,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 0;
+  margin: 50px 75px;
 }
 
 .calculation__h1 {
@@ -378,6 +379,10 @@ body {
   flex-wrap: wrap;
 }
 
+.stages__image {
+  display: none;
+}
+
 .stages__item {
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 }
@@ -462,7 +467,6 @@ body {
 /* footer */
 
 .footer {
-  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   margin-top: 100px;
