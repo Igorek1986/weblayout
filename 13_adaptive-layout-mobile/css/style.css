@@ -263,6 +263,7 @@ body {
 
 .about__item-text {
   margin-top: 10px;
+  padding-right: 120px;
   color: var(--black);
   font-family: Montserrat;
   font-size: 16px;
@@ -282,7 +283,10 @@ body {
 }
 
 .about__item-2 {
-  position: relative;
+  /* position: relative; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 100%;
   height: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
   border-radius: 32px;
   border: 1px solid var(--light-gray);
