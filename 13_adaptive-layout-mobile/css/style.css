@@ -258,7 +258,7 @@ body {
 }
 
 .about__item-offset {
-  padding-left: 300px;
+  margin-left: 300px;
 }
 
 .about__item-text {
@@ -273,8 +273,9 @@ body {
 }
 
 .about__item-1 {
-  position: relative;
   min-height: 622px;
+  justify-content: center;
+  align-items: flex-end;
   border-radius: 32px;
   background-image: url(../img/about_1.jpg);
   background-size: cover;
@@ -283,9 +284,7 @@ body {
 }
 
 .about__item-2 {
-  /* position: relative; */
-  /* display: flex; */
-  /* flex-direction: column; */
+  position: relative;
   width: 100%;
   height: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
   border-radius: 32px;
@@ -300,7 +299,7 @@ body {
   margin: 0;
   padding-top: 20px;
   padding-bottom: 50px;
-  max-width: 1235px;
+  max-width: 1234px;
   color: var(--black);
   font-family: Montserrat;
   font-size: 16px;
@@ -324,29 +323,31 @@ body {
 
 .about__ellipse {
   position: absolute;
-  padding: 110px 0 0 60px;
+  top: 110px;
+  left: 60px;
 }
 
 .about__package {
   position: absolute;
-  padding: 65px 0 0 131px;
+  top: 65px;
+  left: 131px;
 }
 
 .about__ellipse-2 {
   position: absolute;
-  padding: 102px 0 0 60px;
+  top: 102px;
+  left: 60px;
 }
 
 .about__frame {
   position: absolute;
-  padding: 65px 0 0 114.61px;
+  top: 65px;
+  left: 114px;
 }
 
 .about__item-frame {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  padding: 0;
+  height: 196px;
   background-color: currentColor;
   border-radius: 32px;
   align-items: center;
