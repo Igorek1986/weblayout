@@ -321,6 +321,7 @@
   }
 
   .header__right {
+    overflow-y: hidden;
     flex-direction: column-reverse;
   }
 
@@ -453,6 +454,7 @@
 
   .about__item-text {
     margin-top: 4px;
+    padding-right: 0;
     width: 100%;
     font-size: 14px;
     line-height: 28px;
